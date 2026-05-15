@@ -12,12 +12,12 @@ You will then write a program that constructs decks for each game and prints the
 
 Useful references for this lab:
 
-- C++ variables and basic data types: LLM Chapters 1 and 2
-- C++ enumerations: LLM Chapter 19.3
-- C++ strings, vectors, arrays, and I/O: LLM Chapter 3, plus a skim of Chapter 8
-- C++ class and function templates: LLM Chapter 16.1
-- C++ increment operators: LLM Chapter 4.5
-- C++ shift operators: LLM Chapter 4.8
+- C++ variables and basic data types: Lippman Chapters 1 and 2
+- C++ enumerations: Lippman Chapter 19.3
+- C++ strings, vectors, arrays, and I/O: Lippman Chapter 3, plus a skim of Chapter 8
+- C++ class and function templates: Lippman Chapter 16.1
+- C++ increment operators: Lippman Chapter 4.5
+- C++ shift operators: Lippman Chapter 4.8
 - [C++ Reference](http://www.cppreference.com)
 - [Programming Guidelines](docs/programming-guidelines.md)
 - [Studio 0](https://github.com/cse4208-wustl/studio0) for environment setup review
