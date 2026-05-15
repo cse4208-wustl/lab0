@@ -25,7 +25,7 @@ Useful references for this lab:
 
 Review the [Programming Guidelines](docs/programming-guidelines.md) before you begin implementing the lab, and keep them in mind as you develop and test your solution.
 
-## Assignment
+## Details
 
 Record your observations, design decisions, compile warnings or errors, and any other written responses in `ANSWERS.md` as you work.
 
