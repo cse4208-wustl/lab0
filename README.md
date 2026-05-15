@@ -30,7 +30,9 @@ Record your observations, design decisions, compile warnings or errors, and any 
 
 2. Clone your `lab0` repo and work inside that cloned directory.
 
-   The repo already includes the provided `Makefile`. Update it only as needed for your solution.
+   The repo already includes the provided `Makefile`. It assumes specific names for all the files you will develop as part of your solution, so you may want to adjust those names if your implementation uses a different structure.
+
+   In the interest of working incrementally, you may also want to comment out some of the `Makefile` details at first and then add them back in as you go.
 
 3. Use `ANSWERS.md` to record your observations, design decisions, and any information about your implementation as you develop your solution.
 
