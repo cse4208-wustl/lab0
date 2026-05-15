@@ -29,6 +29,8 @@ Review the [Programming Guidelines](docs/programming-guidelines.md) before you b
 
 Record your observations, design decisions, compile warnings or errors, and any other written responses in `ANSWERS.md` as you work.
 
+Some parts of this lab are intentionally somewhat open-ended. When details are under-specified, choose a reasonable design and document that choice clearly in `ANSWERS.md` and comments where helpful.
+
 1. Log into one of the Linux Lab machines via `qlogin`, and confirm that the correct version of `g++` (`8.3.0`) is installed in your environment, as you did in [Studio 0](https://github.com/cse4208-wustl/studio0).
 
 2. Clone your `lab0` repo and work inside that cloned directory.
@@ -143,5 +145,3 @@ Record your observations, design decisions, compile warnings or errors, and any 
    - preserve the intended abstractions and iteration rules
    - use `ANSWERS.md` in place of the old readme-file workflow
    - document deviations, assumptions, and noteworthy implementation details as you go
-
-The original lab instructions are intentionally somewhat open-ended in places. When details are under-specified, choose a reasonable design and document that choice clearly in `ANSWERS.md` and comments where helpful.
