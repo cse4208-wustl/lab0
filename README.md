@@ -42,6 +42,7 @@ Record your observations, design decisions, compile warnings or errors, and any 
 
    - declare an `enum class` for the suits `clubs`, `diamonds`, `hearts`, and `spades`
    - add a highest-valued `undefined` suit to support iteration and out-of-band states
+   - keep the enumeration values monotonically increasing in that order
 
    In the same header and source file:
 
@@ -57,6 +58,13 @@ Record your observations, design decisions, compile warnings or errors, and any 
    - include the template source file from the template header inside `#ifdef TEMPLATE_HEADERS_INCLUDE_SOURCE`
    - ensure the `Makefile` provides `-DTEMPLATE_HEADERS_INCLUDE_SOURCE`
    - declare and define a template `operator<<` that inserts the card's rank and suit into an `ostream`
+   - keep the `operator<<` declaration and definition outside the `Card` struct template itself
+
+   Each template declaration or definition should begin with:
+
+   ```cpp
+   template <typename R, typename S>
+   ```
 
 6. Add a new C++ header file declaring an abstract base class `Deck` with a single public pure virtual `print` method that takes an `ostream&` and returns `void`.
 
@@ -71,7 +79,11 @@ Record your observations, design decisions, compile warnings or errors, and any 
    - implement a default constructor that inserts two of each valid rank and suit combination
    - implement `print` so it outputs the cards in a readable format
 
+   The default constructor should use the prefix increment operators to traverse valid rank and suit values and should not insert cards with `undefined` rank or suit.
+
    Document any important design decisions for the `print` formatting in `ANSWERS.md`.
+
+   The original instructions also note that whitespace around nested template syntax can matter. For example, code such as `vector< Foo<T> >::iterator` may compile where more tightly packed forms may not, depending on the compiler and context.
 
 8. Add a new C++ header file and source file for a Texas hold 'em rank enumeration and a `HoldEmDeck` class derived from `Deck`.
 
@@ -83,6 +95,8 @@ Record your observations, design decisions, compile warnings or errors, and any 
    - define a `HoldEmDeck` class with a private `vector` of `Card<HoldEmRank, Suit>`
    - implement a default constructor that inserts one of each valid rank and suit combination
    - implement `print` so it outputs the cards in a readable format
+
+   The default constructor should use the prefix increment operators to traverse valid rank and suit values and should not insert cards with `undefined` rank or suit.
 
    Document any important design decisions for formatting or ordering in `ANSWERS.md`.
 
@@ -96,7 +110,32 @@ Record your observations, design decisions, compile warnings or errors, and any 
 
 10. Run `make` and fix any errors or warnings that occur. Record the kinds of errors or warnings you encountered, even if you do not list every single instance.
 
-11. Continue developing the remaining parts of the assignment from the provided instructions using the same conventions above:
+11. Run the executable and confirm that the right number of cards of each suit and rank are printed for each deck:
+
+   - two of each valid card for Pinochle
+   - one of each valid card for Texas hold 'em Poker
+
+   In `ANSWERS.md`, document:
+
+   - any runs where the output was incorrect
+   - what caused the incorrect output
+   - how you fixed it
+   - the output that demonstrates correct behavior
+
+12. At the top of `ANSWERS.md`, include:
+
+   - your names
+   - your email addresses
+   - the lab number (`lab0`)
+
+   Also make sure `ANSWERS.md` records:
+
+   - whether you encountered warnings or errors while developing the solution
+   - what the executable did for each trial you ran
+
+   If you did not encounter any warnings or errors, note that explicitly.
+
+13. Continue developing the remaining parts of the assignment from the provided instructions using the same conventions above:
 
    - preserve the intended abstractions and iteration rules
    - use `ANSWERS.md` in place of the old readme-file workflow
