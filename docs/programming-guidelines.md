@@ -17,7 +17,7 @@ These guidelines summarize the linked course programming guidance and are intend
 ## Design and Coding Practices
 
 - Prefer clear modular designs; split large functions into smaller helper functions when appropriate.
-- Prefer standard containers, RAII, and smart pointers over manual memory management when possible.
+- Prefer standard containers, [RAII](https://en.cppreference.com/cpp/language/raii), and smart pointers over manual memory management when possible.
 - If dynamic allocation is necessary, know where the allocated memory is released.
 - Avoid `exit()` in the middle of program logic; prefer returning appropriate values or using well-justified exceptions.
 - Avoid unnecessary default arguments.
