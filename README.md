@@ -19,8 +19,11 @@ Useful references for this lab:
 - C++ increment operators: Lippman Chapter 4.5
 - C++ shift operators: Lippman Chapter 4.8
 - [C++ Reference](http://www.cppreference.com)
-- [Programming Guidelines](docs/programming-guidelines.md)
 - [Studio 0](https://github.com/cse4208-wustl/studio0) for environment setup review
+
+## Programming Guidelines
+
+Review the [Programming Guidelines](docs/programming-guidelines.md) before you begin implementing the lab, and keep them in mind as you develop and test your solution.
 
 ## Assignment
 
