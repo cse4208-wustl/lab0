@@ -73,14 +73,14 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
 
 6. Add a new C++ header file declaring an abstract base class `Deck` with a single public pure virtual `print` method that takes an `ostream&` and returns `void`.
 
-7. Add a new C++ header file and source file for a Pinochle rank enumeration and a `PinochleDeck` class derived from `Deck`.
+7. Add a new C++ header file and source file for a Pinochle rank enumeration and a `PinochleDeck` class derived from `Deck`. Note that using an enum class style declaration and giving the enumerated type a distinct name (like `PinochleRank` for example) can be helpful for both (1) readability and (2) disambiguating labels for ranks that appear in both Pinochle and Texas hold 'em poker, because scoping is explicit.
 
    Your solution should:
 
    - declare the ranks in increasing order as `nine`, `jack`, `queen`, `king`, `ten`, `ace`, then `undefined`
    - provide `operator<<` for the rank values
    - provide a prefix increment operator for the rank enumeration
-   - define a `PinochleDeck` class with a private `vector` of `Card<PinochleRank, Suit>`
+   - define a `PinochleDeck` class with a private `vector` of cards parameterized with the rank enumeration for Pinochle and the suit enumeration
    - implement a default constructor that inserts two of each valid rank and suit combination
    - implement `print` so it outputs the cards in a readable format
 
