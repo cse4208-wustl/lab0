@@ -81,7 +81,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - provide `operator<<` for the rank values
    - provide a prefix increment operator for the rank enumeration
    - define a `PinochleDeck` class with a private `vector` of cards parameterized with the rank enumeration for Pinochle and the suit enumeration
-   - implement a default constructor that inserts two of each valid rank and suit combination
+   - implement a default constructor that inserts two of each valid rank and suit combination into the deck
    - implement `print` so it outputs the cards in a readable format
 
    The default constructor should use the prefix increment operators to traverse valid rank and suit values and should not insert cards with `undefined` rank or suit.
