@@ -88,7 +88,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
 
    Document any important design decisions for the `print` formatting in `ANSWERS.md`.
 
-   Note that when working with templates, using enough whitespace (and especially putting whitespace between distinct types and the symbols that surround them where necessary) is often essential in order for your code to compile. For example, vector< Foo<T> >::iterator may compile just fine as long as the appropriate header files are included, while vector<Foo<T>>::iterator may not compile because the compiler sees >> as a shift operator.
+   Note that when working with templates, using enough whitespace (and especially putting whitespace between distinct types and the symbols that surround them where necessary) is often essential in order for your code to compile. For example, `vector< Foo<T> >::iterator` may compile just fine as long as the appropriate header files are included, while `vector<Foo<T>>::iterator` may not compile because the compiler sees `>>` as a shift operator.
 
 8. Add a new C++ header file and source file for a Texas hold 'em rank enumeration and a `HoldEmDeck` class derived from `Deck`.
 
