@@ -120,7 +120,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - two of each valid card for Pinochle
    - one of each valid card for Texas hold 'em Poker
 
-   In `ANSWERS.md`, document:
+    In `ANSWERS.md`, document:
 
    - any runs where the output was incorrect
    - what caused the incorrect output
@@ -133,15 +133,13 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - your email addresses
    - the lab number (`lab0`)
 
-   Also make sure `ANSWERS.md` records:
+    Also make sure `ANSWERS.md` records:
 
    - whether you encountered warnings or errors while developing the solution
    - what the executable did for each trial you ran
 
    If you did not encounter any warnings or errors, note that explicitly.
 
-13. Continue developing the remaining parts of the assignment from the provided instructions using the same conventions above:
+## Deliverables
 
-   - preserve the intended abstractions and iteration rules
-   - use `ANSWERS.md` in place of the old readme-file workflow
-   - document deviations, assumptions, and noteworthy implementation details as you go
+Commit and push all modified and added files to the repo.
