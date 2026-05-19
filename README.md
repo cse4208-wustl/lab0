@@ -97,7 +97,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - declare the ranks in increasing order as `two` through `ace`, then `undefined`
    - provide `operator<<` for the rank values
    - provide a prefix increment operator for the rank enumeration
-   - define a `HoldEmDeck` class with a private `vector` of `Card<HoldEmRank, Suit>`
+   - define a `HoldEmDeck` class with a with a private `vector` of cards parameterized with the rank enumeration for Hold 'em and the suit enumeration
    - implement a default constructor that inserts one of each valid rank and suit combination
    - implement `print` so it outputs the cards in a readable format
 
