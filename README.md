@@ -115,7 +115,9 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
 
 10. Run `make` and fix any errors or warnings that occur. Record the kinds of errors or warnings you encountered, even if you do not list every single instance.
 
-11. Run the executable and confirm that the right number of cards of each suit and rank are printed for each deck:
+11. Run the executable.
+
+   Confirm that the right number of cards of each suit and rank are printed for each deck.
 
    - two of each valid card for Pinochle
    - one of each valid card for Texas hold 'em Poker
@@ -127,11 +129,12 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - how you fixed it
    - the output that demonstrates correct behavior
 
-12. At the top of `ANSWERS.md`, include:
+12. Update `ANSWERS.md` with developers' information.
+
+   Include:
 
    - your names
    - your email addresses
-   - the lab number (`lab0`)
 
    Also make sure `ANSWERS.md` records:
 
