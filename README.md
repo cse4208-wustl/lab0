@@ -120,7 +120,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - two of each valid card for Pinochle
    - one of each valid card for Texas hold 'em Poker
 
-    In `ANSWERS.md`, document:
+   In `ANSWERS.md`, document:
 
    - any runs where the output was incorrect
    - what caused the incorrect output
@@ -133,7 +133,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - your email addresses
    - the lab number (`lab0`)
 
-    Also make sure `ANSWERS.md` records:
+   Also make sure `ANSWERS.md` records:
 
    - whether you encountered warnings or errors while developing the solution
    - what the executable did for each trial you ran
