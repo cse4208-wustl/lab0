@@ -33,15 +33,15 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
 
 1. Log into one of the Linux Lab machines via `qlogin`, and confirm that the correct version of `g++` (`8.3.0`) is installed in your environment, as you did in [Studio 0](https://github.com/cse4208-wustl/studio0).
 
-2. Clone your `lab0` repo and work inside that cloned directory.
+1. Clone your `lab0` repo and work inside that cloned directory.
 
    The repo already includes the provided `Makefile`. It assumes specific names for all the files you will develop as part of your solution, so you may want to adjust those names if your implementation uses a different structure.
 
    In the interest of working incrementally, you may also want to comment out some of the `Makefile` details at first and then add them back in as you go.
 
-3. Use `ANSWERS.md` to record your observations, design decisions, and any information about your implementation as you develop your solution.
+1. Use `ANSWERS.md` to record your observations, design decisions, and any information about your implementation as you develop your solution.
 
-4. Add a new C++ header file and a new C++ source file. In them, declare and define a suit enumeration and related operators for playing cards used in both Pinochle and Texas hold 'em Poker.
+1. Add a new C++ header file and a new C++ source file. In them, declare and define a suit enumeration and related operators for playing cards used in both Pinochle and Texas hold 'em Poker.
 
    In the header file:
 
@@ -54,7 +54,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - declare and define `operator<<` so it prints `"C"`, `"D"`, `"H"`, `"S"`, or `"?"` as appropriate
    - declare and define a prefix increment operator that advances to the next suit unless the value is already `undefined`
 
-5. Add a new C++ header file and source file that declare and define a `Card` struct template parameterized by rank and suit types.
+1. Add a new C++ header file and source file that declare and define a `Card` struct template parameterized by rank and suit types.
 
    Your solution should:
 
@@ -71,9 +71,9 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    template <typename R, typename S>
    ```
 
-6. Add a new C++ header file declaring an abstract base class `Deck` with a single public pure virtual `print` method that takes an `ostream&` and returns `void`.
+1. Add a new C++ header file declaring an abstract base class `Deck` with a single public pure virtual `print` method that takes an `ostream&` and returns `void`.
 
-7. Add a new C++ header file and source file for a Pinochle rank enumeration and a `PinochleDeck` class derived from `Deck`. Note that using an enum class style declaration and giving the enumerated type a distinct name (like `PinochleRank` for example) can be helpful for both (1) readability and (2) disambiguating labels for ranks that appear in both Pinochle and Texas hold 'em poker, because scoping is explicit.
+1. Add a new C++ header file and source file for a Pinochle rank enumeration and a `PinochleDeck` class derived from `Deck`. Note that using an enum class style declaration and giving the enumerated type a distinct name (like `PinochleRank` for example) can be helpful for both (1) readability and (2) disambiguating labels for ranks that appear in both Pinochle and Texas hold 'em poker, because scoping is explicit.
 
    Your solution should:
 
@@ -90,7 +90,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
 
    Note that when working with templates, using enough whitespace (and especially putting whitespace between distinct types and the symbols that surround them where necessary) is often essential in order for your code to compile. For example, `vector< Foo<T> >::iterator` may compile just fine as long as the appropriate header files are included, while `vector<Foo<T>>::iterator` may not compile because the compiler sees `>>` as a shift operator.
 
-8. Add a new C++ header file and source file for a Texas hold 'em rank enumeration and a `HoldEmDeck` class derived from `Deck`.
+1. Add a new C++ header file and source file for a Texas hold 'em rank enumeration and a `HoldEmDeck` class derived from `Deck`.
 
    Your solution should:
 
@@ -105,7 +105,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
 
    Document any important design decisions for formatting or ordering in `ANSWERS.md`.
 
-9. Add a new C++ source file defining `main`.
+1. Add a new C++ source file defining `main`.
 
    The `main` function should:
 
@@ -113,11 +113,11 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - pass `cout` into each deck's `print` method
    - return `0` on success
 
-10. Run `make` and fix any errors or warnings that occur. Record the kinds of errors or warnings you encountered, even if you do not list every single instance.
+1. Run `make` and fix any errors or warnings that occur. Record the kinds of errors or warnings you encountered, even if you do not list every single instance.
 
-11. Run the executable.
+1. Run the executable.
 
-   Confirm that the right number of cards of each suit and rank are printed for each deck.
+   Confirm that the right number of cards of each suit and rank are printed for each deck:
 
    - two of each valid card for Pinochle
    - one of each valid card for Texas hold 'em Poker
@@ -129,7 +129,7 @@ Some parts of this lab are intentionally somewhat open-ended. When details are u
    - how you fixed it
    - the output that demonstrates correct behavior
 
-12. Update `ANSWERS.md` with developers' information.
+1. Update `ANSWERS.md` with developers' information.
 
    Include:
 
